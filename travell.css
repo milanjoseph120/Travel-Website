@@ -1,0 +1,597 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    width:100%;
+    height: 100%;
+    background-color: rgb(12, 10, 48);
+}
+.img_logo{
+    width:100px;
+}
+
+.top_navbar{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 0px;
+    margin: 0px 7px;
+}
+
+.para_top_navbar{ 
+    color: rgb(0,0,0,0.54);
+    font-weight: 600;
+}
+
+.icon_topnavbar , .icon_top_navbar{
+    color: rgb(245,99,99);
+    margin: 0px 9px !important;
+}
+
+.nav-link{
+
+
+    color: rgb(255, 255, 255, 0.92);
+    font-size: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 7px;
+}
+
+ .dropdown-menu{
+    padding: 6px 8px;
+    width: 220px;
+    display: block;
+    opacity: 0;
+    transition: 0.2 ease-in;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    opacity: 1;
+}  
+
+.dropdown-item{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 12px ;
+    margin: 2px 0px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.nav-link:hover{
+    color: skyblue;
+}
+.dropdown-item:hover{
+    color: skyblue;
+}
+.btn_navbar{
+    background-color: rgb(245,99,99);
+    text-decoration: none;
+    border-radius: 0px !important;
+    border: none !important;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.home_section{
+    width: 100%;
+    height: 80vh;
+    /* padding: 0px; */
+    overflow: hidden;
+    position: relative;
+}
+.content_home{
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-1{
+    background-image: url(./images/views-entrance-indian-temple.jpg);
+}
+.img-2{
+    background-image: url(./images/young-woman-sitting-hill-high-mountains.jpg);
+}
+.text_content_home{
+    text-align: center;
+    
+}
+.section_title{
+    position: relative;
+    display: inline-block;
+}
+.section_title::before{
+    position: absolute;
+    content: ' ';
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background-color: black;
+}
+.section_title::after{
+    position: absolute;
+    content: ' ';
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background-color: black;
+}
+.heading_home{
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+
+}
+.btn_home{
+    background-color: rgb(240,140,47);
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 14px;
+}
+.btn_home:hover{
+   background-color: rgb(255,108,108);
+   color: black;
+}
+.slider_icon{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    opacity: 1;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50px;
+}
+.hotel_search_form_container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hotel_search_form_content{
+    width:90%;
+    height: 120px;
+    margin: auto;
+    position: absolute;
+    bottom: -40px;
+    border-radius: 8px;
+    background-color: white;
+     box-shadow: 2px 2px 11px rgb(128,128,128,0.25); 
+    padding: 0px 22px;
+}
+ .container_form{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+} 
+
+.input_form{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    border-radius: 5px;
+}
+.input_btn_submit{
+    width: 100%;
+    padding: 18px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(28,195,178);
+    color: white;
+    border: none !important;
+    border-radius: 4px;
+    transition: 0.2s ease-in;
+}
+.input_btn_submit:hover{
+    background-color: rgb(17,165,148);
+}
+
+.about{
+    margin-top: 200px;
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.about_title{
+    font-size: 19px;
+    font-weight: 700;
+    color: rgb(240,140,47);
+    letter-spacing: 1px;
+    position: relative;
+}
+.about_title::after{
+    position: absolute;
+    content: ' ';
+    background-color:rgb(240,140,47);
+    height: 3px;
+    width: 74px;
+    top: 50%;
+    left: 110px;
+    margin-top: -1px;
+}
+.heading_about{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 67px;
+    color: black;
+}
+.para_about{
+    margin: 19px 0px;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    line-height: 37px;
+}
+.heading_sm{
+    margin: 26px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.heading_sm span{
+    color: rgb(32,181,240);
+}
+.about_items_icon{
+    font-size: 40px;
+    color: rgb(240,140,47); 
+    margin: 5px !important; 
+}
+.about_items_heading{
+font-size: 40px;
+font-weight: 700;
+margin: 0px !important;
+}
+.about_items_para{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+ /* .btn_content_about{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(28,195,178);
+    border-radius: 3px;
+    padding: 22px 65px;
+    margin: 46px 0px;
+    transition: 0.2s ease-in;
+}  */
+.imges_container{
+    width: 100%;
+    height: 100%;
+    
+}
+.images_hotel_container{
+    width: 100%;
+    height: 300px;
+    text-align: end;
+    cursor: pointer;
+    /* border:1px solid blue; */
+}
+.image_hotel_1{
+    display: inline-block;
+    width: 75%;
+    height: 80%;
+    background-color: yellow;
+    margin-top: 18%;
+    background-image: url(./images/ocean-travel-modern-nobody-infinity.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+.image_hotel_2{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,183,255);
+    background-image: url(./images/relaxation-pool-umbrella-lounge-sky.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+.image_hotel_3{
+    display: inline-block ;
+    width: 75%;
+    height: 80%;
+    background-color: rgb(255,51,0);
+    margin-top: 18%;
+    background-image: url(./images/traditional-beautiful-building-moroccan-morocco.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+
+}
+.image_hotel_4{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255,0,221);
+    background-image: url(./images/hammocks-with-palm-trees.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+.destination{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0px;
+}
+
+.section_para{
+    margin: 16px 0px;
+    font-weight: 500;
+    color: black
+}
+.content_destination{
+    width: 100%;
+    height: 120px;
+    margin: 11px 0px;
+    background-color: red;
+    border-radius: 4px;
+    position: relative;
+}
+.image-1{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/silhouette-minaret-reflects-orange-twilight-sky-generated-by-ai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-2{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/ancient-sandstone-tomb-ruins-showcase-east-asian-culture-generated-by-ai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-3{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/tourists-take-boat-ban-rak-thai-village-mae-hong-son-province-thailand.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-4{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/backpacker-deogyusan-mountains-winter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-5{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/beautiful-sunrise-fishing-dip-nets-pakpra-phatthalung-thailand.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-6{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/abhishek-prasad-ii0oWs5abCo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-7{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/arab-people-with-camel-caravan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-8{
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(./images/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.content_text_place{
+    position: absolute;
+    bottom: 0px;
+    left: 24px;
+    color: white;
+}
+.tour_price{
+    font-weight: 300;
+    font-size: 14px;
+}
+.place{
+    font-weight: 500;
+    font-size: 17px;
+}
+.our_team{
+    width: 100%;
+    /* height: 80vh; */
+    /* margin-top: 1500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.heading_title{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(240,140,47);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.heading_lg_title{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0px;
+}
+.team_content_container{
+    width: 100%;
+    height: 305px;
+    box-shadow: 2px 2px 21px rgb(128,128,128,0.192);
+    margin: 20px 0px;
+    border-radius: 3px !important;
+    position: relative;
+}
+.img_team_member{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+.img_member_1{
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(./images/beautiful-curly-girl-pointing-finger.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img_member_2{
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(./images/cheerful-traditional-indian-woman-white-background-studio-shot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img_member_3{
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(./images/man-wearing-t-shirt-gesturing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img_member_4{
+    border-radius: 4px 4px 0px 0px;
+    background-image: url(./images/portrait-business-man-using-his-mobile-phone-while-standing-outdoors-street-business-urban-concept.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.social_icons_team{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: cover;
+    /* background-color: cyan; */
+}
+.social_icons_team a{ 
+    width: 45px;
+    height: 40px;
+    background-color: rgb(247,173,13);
+    border-radius: 2px;
+    margin: 0px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-decoration: none !important;
+}
+.icon_acounts_teams{
+    color: white;
+    font-size: 19px;
+}
+.teams_section_headings{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading_name{
+    margin: 10px 0px;
+    color: rgb(0,0,0,0.8);
+    font-weight: 600;
+}
+.heading_sm_name{
+    font-size: 14px;
+    color:  rgb(0,0,0,0.668);
+}
+.footer_area{
+    margin-top: 40px;
+    height: 70vh;
+    background-color: rgb(14,39,55);
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+footer{
+    width: 90% !important;
+}
+.logo_footer{
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+}
+.logo_footer span{
+    color: yellow;
+}
+footer h3{
+    color: rgb(143, 142, 142);
+    font-size: 23px;
+    margin:17px 0px;
+}
+.para_footer{
+    font-size: 15px;
+    color: rgb(255,255,255,0.6);
+    line-height: 24px;
+    font-weight: 400;
+    margin: 7px 0px;
+}
+.para_footer_2{
+    font-size: 13px;
+    color: rgb(255,255,255,0.8);
+    line-height: 24px;
+}
+.blogs_section_footer{
+    color:white;
+    font-weight: 500;
+    margin-bottom: 36px !important;
+}
+.blogs_footer{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+.blog_title{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.para_blogs_footer{
+    font-size: 13px;
+    color: rgb(255,255,255,0.7);
+    margin: 14px 0px;
+}
+.link_items_footer{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2 ease;
+}
+.link_items_footer span{
+    padding: 0px 4px;
+    font-size: 13px;
+}
+.link_items_footer:hover{
+    letter-spacing: 2px;
+
+}
